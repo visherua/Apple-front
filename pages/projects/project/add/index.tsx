@@ -59,7 +59,7 @@ const Home = () => {
                     Back
                 </button>
             </Link>
-            {errors?.map((item) => <li key={item}>{item}</li>)} {/* Added 'key' attribute for mapping errors */}
+            {errors?.map((item: any) => <li key={item.id}>{item.message}</li>)} {/* Added 'key' attribute for mapping errors */}
         </div>
     );
 };
