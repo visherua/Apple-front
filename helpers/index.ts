@@ -54,7 +54,7 @@ const createProject = async ({
             name: projectName,
         }),
     });
-    //router.push(`/projects`);
+    router.push(`/projects`);
 };
 
 const updateProjects = async ({
@@ -85,7 +85,7 @@ const updateProjects = async ({
             tasks: updatedTasks,
         }),
     });
-    // router.push('/projects');
+    router.push('/projects');
 };
 
 export { createProject, getAllProjects, updateProjects, getProjectById };

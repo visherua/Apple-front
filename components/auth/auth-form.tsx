@@ -45,7 +45,7 @@ function AuthForm() {
       });
 
       if (!result.error) {
-        // router.replace('/projects');
+        router.replace('/projects');
       }
     } else {
       try {
