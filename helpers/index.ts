@@ -1,4 +1,4 @@
-import { NextRouter } from 'next/router';
+//import { NextRouter } from 'next/router';
 
 const getAllProjects = async (): Promise<object[]> => {
     const result = await fetch('https://nest-js-postgres.vercel.app/project', {
@@ -32,7 +32,7 @@ const createProject = async ({
     projectComments: any[];
     tasks: any[];
     projectName: string;
-    router: NextRouter;
+    router: any;
     setErrors: (errors: any) => void;
 }): Promise<void> => {
     if (!projectName) {
@@ -54,7 +54,7 @@ const createProject = async ({
             name: projectName,
         }),
     });
-    router.push(`/projects`);
+    //router.push(`/projects`);
 };
 
 const updateProjects = async ({
@@ -66,7 +66,7 @@ const updateProjects = async ({
     projectComments: string[] | null;
     tasks: { id: number, text: string }[];
     params: { id: string };
-    router: NextRouter;
+    router: any;
 }): Promise<void> => {
     let comments = '[]';
     if (projectComments) {
@@ -85,7 +85,7 @@ const updateProjects = async ({
             tasks: updatedTasks,
         }),
     });
-    router.push('/projects');
+    // router.push('/projects');
 };
 
 export { createProject, getAllProjects, updateProjects, getProjectById };
