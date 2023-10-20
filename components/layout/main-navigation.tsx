@@ -10,7 +10,6 @@ function MainNavigation() {
 
   return (
     <header className="bg-purple-700 p-4">
-      <script src="https://cdn.tailwindcss.com"></script>
       <Link href='/' className="text-white text-2xl font-semibold">
         Viktor's App
       </Link>

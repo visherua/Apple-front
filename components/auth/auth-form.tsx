@@ -59,7 +59,6 @@ function AuthForm() {
 
   return (
     <section className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto mt-14">
-      <script src="https://cdn.tailwindcss.com"></script>
       <h1 className="text-2xl font-semibold">
         {isLogin ? 'Login' : 'Sign Up'}
       </h1>

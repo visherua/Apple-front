@@ -25,7 +25,6 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
                 <title>Your Page Title</title>
                 {/* Add your head content here */}
             </Head>
-            <script src="https://cdn.tailwindcss.com"></script>
             <div className='App h-full py-6 px-6 bg-white'>
                 <div className='bg-gray-50 shadow-lg border rounded-md'>
                     <div className='mx-auto block max-w-7xl py-12 px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8'>

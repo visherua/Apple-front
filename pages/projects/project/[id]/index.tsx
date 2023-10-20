@@ -55,7 +55,6 @@ const Home: React.FC<HomeProps> = ({ project, params }) => {
 
     return (
         <div className="container mx-auto p-4">
-            <script src="https://cdn.tailwindcss.com"></script>
             <h1 className="text-2xl font-bold mb-4">{projectName}</h1>
             <TaskForm onAddTask={addTask} />
             <TaskList tasks={tasks} onDeleteTask={deleteTask} />

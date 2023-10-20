@@ -37,7 +37,6 @@ const Home = () => {
 
     return (
         <div className="container mx-auto p-4">
-            <script src="https://cdn.tailwindcss.com"></script>
             <h1 className="text-2xl font-bold mb-4">Create a new project</h1>
             <input type='text' onChange={(e) => setName(e.target.value)}></input>
             <ProjectNameForm onAddName={addProjectName} setErrors={setErrors} />
